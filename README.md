@@ -1,32 +1,36 @@
 # Data Structures and Algorithms (DSA)
 
-This repository contains my DSA practice programs implemented in Python.
+This repository contains my DSA and Clean Principle practice programs implemented in Python.
 
-## Files Included
+## Folders Consists of:
 
-### Array_operation.py
-Implements basic array operations:
-- Array Traversal
-- Array Insertion
-- Array Deletion
+### DSA Fundamentals
+- Array_operation.py
+- Check_Palindrome.py
+- Count_vowels.pyy
+- Prob1.py
+- Prob2.py
+- Reverse_str.py
 
-### Reverse_str.py
-- Reverses a given string.
+### Linear_Data_Structure
+- Parentheses_Checker.py
+- Queue.py
+- Single_linked_list.py
+- Stack.py
 
-### Count_vowels.py
-- Counts the number of vowels in a string.
+### Searching_and_Sorting
+- Binary_search.py
+- Linear_search.py
+- Bubble_sort.py
+- Selection_sort.py
+- Tsk2_Prob1.py
+- Tsk2_Prob2.py
+- Tsk2_Prob3.py
 
-### Check_Palindrome.py
-- Checks whether a string or number is a palindrome.
+### Clean_Code_Principle
+- Refactor_Prob1.py
+- Refactor_Prob2.py
+- Refactor_Prob3.py
+- Refactor_Student_Management_System.py
 
-### Single_linked_list.py
-- Implements a Singly Linked List.
 
-### Stack.py
-- Implements a Stack.
-
-### Queue.py
-- Implements a Queue.
-
-### Parentheses_Checker.py
-- Checks whether an expression has balanced parentheses using a Stack.
