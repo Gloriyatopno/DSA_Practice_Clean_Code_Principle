@@ -3,12 +3,17 @@ Refactor Student Management System
 Build a Simple Student Management System
 
 Features:
+
 1. Add Student
 2. View All Students
 3. Search Student
-4. Update Student
-5. Delete Student
+4. Calculate Average Marks
+5. Display Grade
+6. Update Student
+7. Delete Student
+8. Exit
 '''
+
 
 def calculate_grade(average_marks):
     if average_marks >= 90:
@@ -64,9 +69,11 @@ while True:
     print("1. Add Student")
     print("2. View All Students")
     print("3. Search Student")
-    print("4. Update Student")
-    print("5. Delete Student")
-    print("6. Exit")
+    print("4. Calculate Average Marks")
+    print("5. Display Grade")
+    print("6. Update Student")
+    print("7. Delete Student")
+    print("8. Exit")
 
     try:
         choice = int(input("Enter your choice: "))
@@ -109,6 +116,38 @@ while True:
 
     elif choice == 4:
 
+        student_name = input(
+            "Enter Student Name to Calculate Average: "
+        ).lower()
+
+        if student_name in students:
+
+            average_marks = students[student_name]["Average"]
+
+            print("\nStudent Name:", student_name)
+            print("Average Marks:", average_marks)
+
+        else:
+            print("Student not found.")
+
+    elif choice == 5:
+
+        student_name = input(
+            "Enter Student Name to Display Grade: "
+        ).lower()
+
+        if student_name in students:
+
+            grade = students[student_name]["Grade"]
+
+            print("\nStudent Name:", student_name)
+            print("Grade:", grade)
+
+        else:
+            print("Student not found.")
+
+    elif choice == 6:
+
         student_name = input("Enter Student Name to Update: ").lower()
 
         if student_name in students:
@@ -120,9 +159,9 @@ while True:
         else:
             print("Student not found.")
 
-    elif choice == 5:
+    elif choice == 7:
 
-        student_name = input("Enter Student Name to Delete: ").lower()  
+        student_name = input("Enter Student Name to Delete: ").lower()
 
         if student_name in students:
             del students[student_name]
@@ -130,8 +169,8 @@ while True:
         else:
             print("Student not found.")
 
-    elif choice == 6:
-        print("Exiting Student Management System! \n Thanks for visiting.")
+    elif choice == 8:
+        print("Exiting Student Management System! \nThanks for visiting.")
         break
 
     else:

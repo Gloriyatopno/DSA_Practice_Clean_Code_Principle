@@ -34,3 +34,20 @@ This repository contains my DSA and Clean Principle practice programs implemente
 - Refactor_Student_Management_System.py
 
 
+Clone the repository:
+
+```bash
+git clone <your-github-repository-link>
+```
+
+Navigate to the project folder:
+
+```bash
+cd Folder_name
+```
+
+Run the program:
+
+```bash
+python file_name.py
+```
